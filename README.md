@@ -19,7 +19,7 @@
  
 ### PSP用
  1. 同じく[releases](https://github.com/Prince-of-sea/KIRIKIRI2ONS_COMP-mama2/releases/latest)からDL
- 2. 中のONS.INIを削除
+ 2. 中のONS.INIもexeと同じく展開物のフォルダへ
  3. 他は[この辺](https://github.com/Prince-of-sea/KIRIKIRI2ONS_APTIT-sobo)とか[この辺](https://github.com/Prince-of-sea/KIRIKIRI2ONS_ST-miku)と一緒
 
 ## 注意事項
