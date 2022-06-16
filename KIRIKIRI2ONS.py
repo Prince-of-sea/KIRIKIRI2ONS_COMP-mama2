@@ -187,7 +187,7 @@ for snr_path in pathlist:
 					line='mov $'+str(str2var(set_line[1][2:].lower(),0))+',"'+stand_name(set_line[2])+'"\n'
 
 			elif tati_line:
-				line='print 2:lsp 12,"grp\\stand\\"+$'+str(str2var(tati_line[2].lower(),0))+'+"'+stand_name(tati_line[3])+'.png",0,0\n'
+				line='lsp 12,"grp\\stand\\"+$'+str(str2var(tati_line[2].lower(),0))+'+"'+stand_name(tati_line[3])+'.png",0,0:print 2\n'
 
 			elif seplay_line:
 				line = ('dwave '+seplay_line[2]+',"se\\'+str(str2var(seplay_line[3].lower(),1))+'.ogg"\n')

@@ -21,6 +21,7 @@ effect 3,10,1000
 ;<<-EFFECT->>
 
 game
+
 ;----------------------------------------
 
 ;***名前表示ウィンドウ - システムカスタマイズ***
@@ -29,7 +30,7 @@ game
 gettag $0,$1 ;[]の値（名前）を取得
 
 if %199!=1 lsp 5,":s/28,28,0;#ffffff"+$0,50,470 ;名前の表示：文字幅28,高さ28,字間0
-if %199==1 lsp 5,":s/15,15,0;#ffffff"+$0,50*480/960,470*480/960+2 ;名前の表示：文字幅30,高さ30,字間0
+if %199==1 lsp 5,":s/15,15,0;#ffffff"+$0,50*480/960,470*480/960+3 ;名前の表示：文字幅30,高さ30,字間0
 print 0
 return
 
@@ -43,6 +44,8 @@ return
 	bg black,3
 	bgmstop
 	reset
+
+;----------------------------------------
 
 *start
 
@@ -68,9 +71,9 @@ bg "grp\parts\TitleBg.png",3
 lsp 24,"grp\parts\TitleSEL.png",0,0:print 2
 click
 
-if %199==1 lsph 9,"grp\parts\MesWinNML.png",0*480/960,410*480/960+2:print 0
-if %199==1 lsph 11,"grp\parts\MesWinBg.png",0*480/960,410*480/960+2:print 0
-if %199==1 setwindow 80*480/960,500*480/960+2,33,4,15,15,2,2,20,0,1,"grp\parts\MesWinScreen.png",0*480/960,410*480/960+2
+if %199==1 lsph 9,"grp\parts\MesWinNML.png",0*480/960,410*480/960+3:print 0
+if %199==1 lsph 11,"grp\parts\MesWinBg.png",0*480/960,410*480/960+3:print 0
+if %199==1 setwindow 80*480/960,500*480/960+3,33,4,15,15,2,2,20,0,1,"grp\parts\MesWinScreen.png",0*480/960,410*480/960+3
 
 if %199!=1 lsph 9,"grp\parts\MesWinNML.png",0,410:print 0
 if %199!=1 lsph 11,"grp\parts\MesWinBg.png",0,410:print 0
@@ -83,6 +86,7 @@ select
 
 goto *title
 
+;----------------------------------------
 
 *endmode
 	csp 24:print 0
@@ -104,5 +108,5 @@ goto *title
 	bgmstop
 	goto *Block1_1
 
-
+;----------------------------------------
 
